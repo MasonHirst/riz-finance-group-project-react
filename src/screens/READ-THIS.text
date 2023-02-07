@@ -1,0 +1,4 @@
+to organize a bit, lets have the screens folder be components that are complete pages. 
+So like for the dashboard, you might make 4 smaller components with each snapshot and 
+put those in the components folder, within their own subfolder. Then you would import 
+those smaller components into the dashboardScreen component in this folder.
