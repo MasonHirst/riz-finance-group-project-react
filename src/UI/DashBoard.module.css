@@ -1,0 +1,58 @@
+/* ! This file and folder will be deleted once MUI is integragted */
+
+.nav {
+    display: flex;
+    gap: 5rem;
+    padding: 0 2rem;
+}
+
+.header {
+    display: flex;
+    justify-content: flex-end;
+    border-bottom: solid .1rem black;
+    margin-bottom: 1rem;
+}
+
+.snapshot_container {
+    display: flex;
+    justify-content: flex-end;
+    gap: 5rem;
+    padding-right: 3rem;
+}
+
+.snapshot_box {
+    border: solid black .1rem;
+    border-radius: 1rem;
+    padding: 5rem;
+    width: 38vw;
+}
+.snapshot_box_left {
+    border: solid black .1rem;
+    border-radius: 1rem;
+    padding: 5rem;
+    height: 20vh;
+}
+
+
+.snapshot_left {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.snapshot_right {
+    display: flex;
+    flex-direction: column;
+    gap: 4rem;
+}
+
+.snap_headers {
+    position: relative;
+    left: -3rem;
+    top: -5rem;
+}
+.snap_headers_right {
+    position: relative;
+    left: -18rem;
+    top: -5rem;
+}
