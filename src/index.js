@@ -17,6 +17,15 @@ const theme = createTheme({
       main: '#01756B' //greenish teal from ally bank website
     }
   },
+  components: {
+    MuiAppBar: {
+      styleOverrides: {
+        colorPrimary: {
+          backgroundColor: "white"
+        }
+      }
+    }
+  },
 })
 
 const root = ReactDOM.createRoot(document.getElementById('root'))
