@@ -1,15 +1,15 @@
 import React from 'react'
 import LoggedOutHeader from '../components/auth-components/LoggedOutHeader'
-import LoginEmail from '../components/auth-components/LoginEmail'
+import LoginPassword from '../components/auth-components/LoginPassword'
 
-const LoginScreen = () => {
+const LoginPasswordScreen = () => {
   
   return (
     <div>
       <LoggedOutHeader />
-      <LoginEmail />
+      <LoginPassword />
     </div>
   )
 }
 
-export default LoginScreen
+export default LoginPasswordScreen

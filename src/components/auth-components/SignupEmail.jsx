@@ -7,15 +7,16 @@ import Button from '@mui/material/Button'
 import axios from 'axios'
 import { AuthModal } from '../../reusable-styles/AuthModal'
 
-function LoginForm() {
+function SignupEmail() {
   const inputRef = useRef()
   const [email, setEmail] = useState('')
   const [error, setError] = useState(false)
   const navigate = useNavigate()
 
+  
   return (
     <AuthModal>
-      <Typography variant="h5">Welcome</Typography>
+      <Typography variant="h5">Create Your Account</Typography>
 
       <form
         style={{
@@ -34,6 +35,7 @@ function LoginForm() {
           variant="outlined"
           label="Email address"
           fullWidth
+          color='secondary'
         />
         {error ? (
           <Typography
@@ -48,6 +50,7 @@ function LoginForm() {
         <Button
           size="large"
           type="submit"
+          color='third'
           variant="contained"
           fullWidth
           style={{
@@ -55,6 +58,7 @@ function LoginForm() {
             boxShadow: 'none',
             fontSize: '18px',
             textTransform: 'none',
+            color: 'white',
           }}
         >
           Continue
@@ -63,9 +67,9 @@ function LoginForm() {
 
       <div style={{ width: '100%' }}>
         <Typography align="left" variant="body2">
-          Don't have an account?{' '}
-          <Link href="signup" underline="none" style={{ fontWeight: '600' }}>
-            Sign up
+          Already have an account?{' '}
+          <Link color='secondary' href="login" underline="none" style={{ fontWeight: '600' }}>
+            Log in
           </Link>
         </Typography>
       </div>
@@ -73,4 +77,4 @@ function LoginForm() {
   )
 }
 
-export default LoginForm
+export default SignupEmail
